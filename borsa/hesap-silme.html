@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hesap Silme — Borsa Simülatörü: Yatırım</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin:0; background:#f6f6f8; color:#1a1a1a;
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 80px; }
+  h1 { font-size:28px; line-height:1.25; margin:0 0 4px; }
+  h2 { font-size:20px; margin:36px 0 10px; }
+  .sub { color:#666; margin:0 0 28px; }
+  .card { background:#fff; border:1px solid #e3e3e8; border-radius:12px; padding:20px 24px; margin:20px 0; }
+  ol, ul { padding-left:22px; }
+  li { margin:6px 0; }
+  table { border-collapse:collapse; width:100%; margin:12px 0; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid #e8e8ed; vertical-align:top; }
+  th { background:#fafafc; font-weight:600; width:38%; }
+  a { color:#0b57d0; }
+  .warn { background:#fff8e6; border:1px solid #f0d9a0; border-radius:10px; padding:14px 18px; }
+  hr { border:0; border-top:1px solid #e3e3e8; margin:56px 0 32px; }
+  footer { color:#777; font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Hesap ve Veri Silme Talebi</h1>
+  <p class="sub">
+    <strong>Borsa Simülatörü: Yatırım</strong> &nbsp;·&nbsp; com.borsasimulator.app<br>
+    Geliştirici: Yusuf Doğan (App Store: Yusuf Doan) &nbsp;·&nbsp; <a href="kvkk.html">KVKK Aydınlatma Metni</a>
+  </p>
+
+  <p>
+    Bu sayfa, <strong>Borsa Simülatörü: Yatırım</strong> uygulamasında oluşturduğunuz hesabın ve
+    bu hesaba bağlı tüm verilerin nasıl silineceğini açıklar.
+  </p>
+
+  <h2>Yöntem 1 — Uygulama içinden (anında)</h2>
+  <div class="card">
+    <ol>
+      <li>Uygulamayı açın ve hesabınıza giriş yapın.</li>
+      <li>Alt menüden <strong>Ayarlar</strong> sekmesine gidin.</li>
+      <li>Sayfanın altındaki <strong>Hesabı Sil</strong> seçeneğine dokunun.</li>
+      <li>Açılan onay penceresinde <strong>Sil</strong>'e dokunun.</li>
+    </ol>
+    <p>
+      Onayladığınız anda hesabınız ve verileriniz sunucularımızdan kalıcı olarak silinir,
+      oturumunuz kapatılır. Bu işlem <strong>geri alınamaz</strong>.
+    </p>
+    <p>
+      Misafir olarak oynuyorsanız <strong>Ayarlar → Çıkış Yap</strong> misafir hesabınızı ve verilerini aynı şekilde siler.
+    </p>
+  </div>
+
+  <h2>Yöntem 2 — E-posta ile</h2>
+  <div class="card">
+    <p>Uygulamaya erişemiyorsanız (telefonu kaybettiyseniz, giriş yapamıyorsanız vb.):</p>
+    <ul>
+      <li>
+        <strong><a href="mailto:doganyusuf967@gmail.com">doganyusuf967@gmail.com</a></strong> adresine, hesabınızda kayıtlı e-posta adresinden
+        e-posta gönderin.
+      </li>
+      <li>Konu satırına <strong>“Hesap Silme Talebi”</strong> yazın.</li>
+      <li>Kimliğinizi doğrulamak için hesabınızdaki <strong>görünen adı</strong> belirtin.</li>
+    </ul>
+    <p>
+      Talebiniz <strong>en geç 30 gün içinde</strong> işleme alınır ve sonuç size e-posta ile bildirilir.
+    </p>
+  </div>
+
+  <h2>Silinen veriler</h2>
+  <p>Hesabınızı sildiğinizde aşağıdaki verilerin tamamı kalıcı olarak silinir:</p>
+  <table>
+    <tr><th>Hesap bilgileri</th><td>E-posta adresi, kullanıcı kimliği (ID), kimlik doğrulama kayıtları</td></tr>
+    <tr><th>Profil bilgileri</th><td>Görünen ad, profil fotoğrafı</td></tr>
+    <tr><th>Oyun verileri</th><td>Sanal bakiye, portföy, işlem geçmişi, başarımlar, favoriler, günlük görev ilerlemesi</td></tr>
+    <tr><th>Sıralama ve turnuva</th><td>Liderlik tablosu kaydınız ve turnuva katılım geçmişiniz</td></tr>
+    <tr><th>Bildirim verileri</th><td>Cihazınıza ait anlık bildirim (push) kimliği</td></tr>
+    <tr><th>Geri bildirimler</th><td>Değerlendirme penceresinden gönderdiğiniz yazı ve puanlar</td></tr>
+  </table>
+
+  <h2>Saklanan veriler ve süreler</h2>
+  <table>
+    <tr>
+      <th>Sunucu yedekleri</th>
+      <td>Silinen kayıtlar, olağan felaket kurtarma yedeklerinde en fazla <strong>30 gün</strong> daha
+          bulunabilir; bu sürenin sonunda yedeklerden de otomatik olarak kaldırılır.</td>
+    </tr>
+    <tr>
+      <th>Anonim istatistikler</th>
+      <td>Kimliğinizle ilişkilendirilemeyen, kişisel veri içermeyen toplu kullanım istatistikleri
+          süresiz saklanabilir. Bu veriler sizi tanımlamak için kullanılamaz.</td>
+    </tr>
+    <tr>
+      <th>Yasal zorunluluk</th>
+      <td>Yürürlükteki mevzuat gereği saklanması zorunlu bir kayıt bulunması hâlinde, yalnızca ilgili
+          kayıt yasal saklama süresi boyunca tutulur.</td>
+    </tr>
+  </table>
+
+  <div class="warn">
+    <strong>Not:</strong> Uygulama gerçek para veya gerçek menkul kıymet işlemi içermez.
+    Hesabınızdaki bakiye ve portföy tamamen sanaldır; silinmeleri hâlinde geri getirilemez.
+  </div>
+
+  <hr>
+
+  <h1 id="en" lang="en">Account &amp; Data Deletion</h1>
+  <p class="sub" lang="en"><strong>Borsa Simülatörü: Yatırım</strong> · com.borsasimulator.app</p>
+  <div lang="en">
+    <h2>Option 1 — In the app (immediate)</h2>
+    <p>Open the app → <strong>Settings</strong> → <strong>Delete Account</strong> → confirm.
+       Your account and data are permanently erased from our servers immediately. This cannot be undone.</p>
+
+    <h2>Option 2 — By email</h2>
+    <p>If you can't access the app, email <strong><a href="mailto:doganyusuf967@gmail.com">doganyusuf967@gmail.com</a></strong> from the address
+       registered to your account with the subject “Account Deletion Request”. Requests are processed
+       within <strong>30 days</strong>.</p>
+
+    <h2>What is deleted</h2>
+    <p>Email address, user ID, authentication records, display name, profile photo, virtual balance,
+       portfolio, transaction history, achievements, favourites, daily quest progress, leaderboard and
+       tournament records, your push notification token and feedback you submitted. As a guest, <strong>Settings → Sign Out</strong> deletes your guest account the same way.</p>
+
+    <h2>What is retained</h2>
+    <p>Deleted records may remain in routine disaster-recovery backups for up to <strong>30 days</strong>,
+       after which they are removed automatically. Aggregated, anonymised usage statistics that cannot
+       identify you may be kept indefinitely. Records we are legally required to keep are retained only
+       for the statutory period.</p>
+  </div>
+
+  <hr>
+  <footer>
+    Son güncelleme: 7 Eylül 2026 &nbsp;·&nbsp; Last updated: 7 September 2026
+  </footer>
+
+</main>
+</body>
+</html>
